@@ -1,1 +1,1 @@
-## A ecommerce site using dummy api 
+## A ecommerce site using dummy api
