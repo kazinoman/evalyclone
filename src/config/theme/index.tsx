@@ -1,6 +1,7 @@
 export const theme = {
   token: {
-    colorPrimary: "#D7263D",
+    colorPrimary: "#000",
+    colorSecondary: "#F8F9FD",
   },
   components: {
     Radio: {

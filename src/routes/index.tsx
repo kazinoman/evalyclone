@@ -2,11 +2,12 @@ import React, { useEffect, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NProgress from "@/components/nprogress";
 import { publicRoutes } from "./publicRoutes";
+import { ButtomHeader } from "src/layout/header";
 
 const BaseRoutes = () => {
   return (
-    // <Suspense fallback={<NProgress />}>
     <BrowserRouter>
+      <ButtomHeader />
       <Routes>
         // PUBLIC routes
         {publicRoutes.map(({ path, Component }, id) => (
@@ -22,7 +23,6 @@ const BaseRoutes = () => {
         ))}
       </Routes>
     </BrowserRouter>
-    // </Suspense>
   );
 };
 
